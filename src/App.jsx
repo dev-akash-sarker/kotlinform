@@ -18,7 +18,7 @@ function App() {
     createRoutesFromElements(
       <Route>
         <Route element={<LoggedInAdmin />}>
-          <Route index path="/info" element={<AdminUsersInfo />} />
+          <Route path="/info" element={<AdminUsersInfo />} />
         </Route>
         <Route element={<LoggedOutAdmin />}>
           <Route index element={<Registration />} />
