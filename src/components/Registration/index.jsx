@@ -4,14 +4,13 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 // import FormLabel from "@mui/material/FormLabel";
-import Image from "../Image";
+
 import "./style.css";
 import { Field, FormikProvider, useFormik } from "formik";
 import { getDatabase, push, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 
 export default function Registration() {
-  const cover = "/kotlin.jpg";
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -44,12 +43,6 @@ export default function Registration() {
           <div className="flex">
             <div className="bannerside">
               <div className="banner">
-                {/* <Image
-                  src="/kotlin.jpg"
-                  width="100%"
-                  height="100%"
-                  alt="heelo"
-                /> */}
                 <img src="/kotlin.jpg" width="100%" height="100%" alt="cover" />
               </div>
             </div>

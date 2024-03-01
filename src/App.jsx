@@ -18,11 +18,10 @@ function App() {
     createRoutesFromElements(
       <Route>
         <Route element={<LoggedInAdmin />}>
-          <Route path="/info" element={<AdminUsersInfo />} />
+          <Route index path="/info" element={<AdminUsersInfo />} />
         </Route>
         <Route element={<LoggedOutAdmin />}>
           <Route index element={<Registration />} />
-
           <Route path="/adminpanel" element={<Adminpanel />}></Route>
           <Route path="/thankyouforregistration" element={<ThankYou />}></Route>
         </Route>
