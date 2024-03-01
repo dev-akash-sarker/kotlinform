@@ -9,7 +9,9 @@ import "./style.css";
 import { Field, FormikProvider, useFormik } from "formik";
 import { getDatabase, push, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
+
 export default function Registration() {
+  const cover = "/src/assets/images/kotlin.jpg";
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -42,12 +44,7 @@ export default function Registration() {
           <div className="flex">
             <div className="bannerside">
               <div className="banner">
-                <Image
-                  src={"/src/assets/images/kotlin.jpg"}
-                  width="100%"
-                  height="100%"
-                  alt="heelo"
-                />
+                <Image src={cover} width="100%" height="100%" alt="heelo" />
               </div>
             </div>
             <FormikProvider value={formik}>
