@@ -1,0 +1,52 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.displayflex {
+  display: flex;
+}
+
+.virtualtablecss {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.virtualtablecss span {
+  padding: 10px 0;
+  display: block;
+  background-color: #988c8c;
+}
+
+.datacss:nth-child(even) {
+  background-color: #988c8c;
+  padding: 10px 0;
+  color: #fff;
+}
+.datacss:nth-child(odd) {
+  background-color: #34281f;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.positive {
+  color: rgb(39, 255, 46);
+  font-weight: 700;
+}
+
+.negitive {
+  color: red;
+  font-weight: 700;
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.bannerside {
+  width: 50%;
+}
+
+.positioncenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputname {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.bangla {
+  font-family: "Noto Sans Bengali", sans-serif;
+  width: 60%;
+}
+
+.inflex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.labelcss {
+  display: inline-block;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.btnflex {
+  display: flex;
+  gap: 20px;
+}
+
+.extraname {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.flexo {
+  margin-top: 20px;
+}
+
+.flexon {
+  display: flex;
+}

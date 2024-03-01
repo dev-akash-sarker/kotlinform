@@ -1,0 +1,11 @@
+.thankyou p {
+  padding: 20px 30px;
+  font-family: sans-serif;
+  color: black;
+  background: rgb(222, 220, 220);
+  border-radius: 6px;
+}
+
+.thankyou {
+  height: 100vh;
+}
