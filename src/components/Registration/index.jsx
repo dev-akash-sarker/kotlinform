@@ -11,7 +11,7 @@ import { getDatabase, push, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 
 export default function Registration() {
-  const cover = "/src/assets/images/kotlin.jpg";
+  const cover = "/kotlin.jpg";
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {

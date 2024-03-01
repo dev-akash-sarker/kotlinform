@@ -10,8 +10,7 @@ import Adminpanel from "./components/admin";
 import LoggedInAdmin from "./components/PrivateRoutes/LoggedInAdmin";
 import AdminUsersInfo from "./components/AdminData";
 import LoggedOutAdmin from "./components/PrivateRoutes/LoggedOutAdmin";
-import { Provider } from "react-redux";
-import store from "./components/features/stores/Store";
+
 import ThankYou from "./components/Thankyou";
 
 function App() {
@@ -23,6 +22,7 @@ function App() {
         </Route>
         <Route element={<LoggedOutAdmin />}>
           <Route index element={<Registration />} />
+
           <Route path="/adminpanel" element={<Adminpanel />}></Route>
           <Route path="/thankyouforregistration" element={<ThankYou />}></Route>
         </Route>
@@ -31,9 +31,7 @@ function App() {
   );
   return (
     <>
-      <Provider store={store}>
-        <RouterProvider router={router} />
-      </Provider>
+      <RouterProvider router={router} />
     </>
   );
 }
