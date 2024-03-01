@@ -2,10 +2,10 @@
 // import { Outlet } from "react-router-dom";
 
 import { Outlet } from "react-router-dom";
-import AdminUsersInfo from "../AdminData";
 import { useSelector } from "react-redux";
+import Registration from "../Registration";
 
 export default function LoggedInAdmin() {
   const user = useSelector((users) => users.login.loggedIn);
-  return user ? <Outlet /> : <AdminUsersInfo />;
+  return user ? <Outlet /> : <Registration />;
 }
