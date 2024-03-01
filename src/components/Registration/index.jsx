@@ -43,7 +43,7 @@ export default function Registration() {
             <div className="bannerside">
               <div className="banner">
                 <Image
-                  src={"src/assets/images/kotlin.jpg"}
+                  src={"/src/assets/images/kotlin.jpg"}
                   width="100%"
                   height="100%"
                   alt="heelo"
