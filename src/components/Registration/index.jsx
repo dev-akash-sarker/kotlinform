@@ -44,12 +44,13 @@ export default function Registration() {
           <div className="flex">
             <div className="bannerside">
               <div className="banner">
-                <Image
+                {/* <Image
                   src="/kotlin.jpg"
                   width="100%"
                   height="100%"
                   alt="heelo"
-                />
+                /> */}
+                <img src="/kotlin.jpg" width="100%" height="100%" alt="cover" />
               </div>
             </div>
             <FormikProvider value={formik}>
